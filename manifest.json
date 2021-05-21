@@ -1,0 +1,17 @@
+{
+  "name": "Mihai adBlock",
+  "description": "",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+   {
+     "run_at" : "document_start",
+     "matches": ["http://*/*","https://*/*"],
+     "js": ["contentScript.js"]
+   }
+ ],
+ "permissions": [ "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
